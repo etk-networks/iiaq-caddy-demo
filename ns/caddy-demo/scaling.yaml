@@ -4,6 +4,7 @@ metadata:
   name: caddy-scaledobject
   namespace: caddy-demo 
 spec:
+  minReplicaCount: 1
   maxReplicaCount: 5
   pollingInterval: 3  # Optional. Default: 30 seconds
   cooldownPeriod:  5 # Optional. Default: 300 seconds
