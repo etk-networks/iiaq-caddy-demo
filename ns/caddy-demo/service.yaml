@@ -1,17 +1,16 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: v1
+kind: Service
 metadata:
-  name: caddy-ingress
+  name: caddy-svc
   namespace: caddy-demo
 spec:
-  ingressClassName: cilium
-  rules:
-  - http:
-      paths:
-      - backend:
-          service:
-            name: caddy
-            port:
-              number: 80
-        path: /
-        pathType: Prefix
+  selector:
+    app: caddy
+  type: ClusterIP 
+  ports:
+  - name: caddy-svc
+    protocol: TCP
+    port: 80 
+    targetPort: 80
+---
+
