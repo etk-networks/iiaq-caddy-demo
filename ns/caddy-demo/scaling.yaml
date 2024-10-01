@@ -1,11 +1,11 @@
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:
-  name: caddy
+  name: caddy-scaledobject
   namespace: caddy-demo 
 spec:
   scaleTargetRef:
-    deploymentName: caddy
+    deploymentName: caddy-deployment
   triggers:
   - type: cpu
     metricType: Utilization 

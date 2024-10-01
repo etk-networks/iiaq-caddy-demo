@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: caddy
+  name: caddy-deployment
   namespace: caddy-demo
   labels:
     app: caddy
