@@ -14,10 +14,8 @@ spec:
   - type: cpu
     metricType: Utilization 
     metadata:
-      type: Utilization 
       value: "30"
   - type: memory
     metricType: Utilization 
     metadata:
-      type: Utilization 
       value: "30"
