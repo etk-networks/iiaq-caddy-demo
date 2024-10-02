@@ -33,11 +33,11 @@ spec:
         imagePullPolicy: IfNotPresent
         resources:
           requests:
-            cpu: 250m
-            memory: 250Mi
+            cpu: 500m
+            memory: 500Mi
           limits:
-            cpu: 250m
-            memory: 250Mi
+            cpu: 500m
+            memory: 500Mi
         livenessProbe:
           tcpSocket:
             port: 80
